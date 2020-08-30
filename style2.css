@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize);
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background: black;
+  background-image: url("https://players.planetside2.com/images/global/splashBg.jpg?v=205.11");
+  background-size: cover;
+  color: white;
+  font-family: Electrolize, sans-serif;
+}
+
+.box {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 150px;
+  margin: 50px auto;
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 34px;
+  text-shadow: 0px 0px 12px black;
+  z-index: 3;
+}
+
+.box:before {
+  z-index: 4;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 596px;
+  height: 146px;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -349px;
+  left: 49px;
+  width: 502px;
+  height: 849px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  z-index: -1;
+}
+
+.green {
+  box-shadow: -12px -12px 4px -10px rgba(0, 128, 128, 0.2), 12px 12px 4px -10px rgba(0, 128, 128, 0.2);
+}
+.green:before {
+  box-shadow: -20px -20px 0 2px teal, 20px 20px 0 2px teal;
+}
+.green:after {
+  background-image: linear-gradient(225deg, rgba(0, 128, 128, 0.6) 30%, rgba(0, 23, 23, 0.6) 50%);
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
+  box-shadow: 0px 0px 4px 4px rgba(0, 128, 128, 0.2), inset 0px 0px 50px 4px rgba(0, 128, 128, 0.5);
+}
+.green:hover {
+  text-shadow: 0px 0px 8px teal;
+  box-shadow: -12px -12px 25px -10px rgba(0, 128, 128, 0.6), 12px 12px 25px -10px rgba(0, 128, 128, 0.6);
+}
+.green:hover:after {
+  background-image: linear-gradient(225deg, rgba(0, 128, 128, 0.8) 30%, rgba(0, 23, 23, 0.8) 50%);
+}
+
+.orange {
+  box-shadow: -12px -12px 4px -10px rgba(235, 182, 134, 0.2), 12px 12px 4px -10px rgba(235, 182, 134, 0.2);
+}
+.orange:before {
+  box-shadow: -20px -20px 0 2px #ebb686, 20px 20px 0 2px #ebb686;
+}
+.orange:after {
+  background-image: linear-gradient(225deg, rgba(204, 79, 30, 0.6) 30%, rgba(87, 38, 43, 0.6) 50%);
+  border-left: 2px solid #ebb686;
+  border-right: 2px solid #ebb686;
+  box-shadow: 0px 0px 4px 4px rgba(235, 182, 134, 0.2), inset 0px 0px 50px 4px rgba(235, 182, 134, 0.5);
+}
+.orange:hover {
+  text-shadow: 0px 0px 8px #cc4f1e;
+  box-shadow: -12px -12px 25px -10px rgba(235, 182, 134, 0.6), 12px 12px 25px -10px rgba(235, 182, 134, 0.6);
+}
+.orange:hover:after {
+  background-image: linear-gradient(225deg, rgba(204, 79, 30, 0.8) 30%, rgba(87, 38, 43, 0.8) 50%);
+}
